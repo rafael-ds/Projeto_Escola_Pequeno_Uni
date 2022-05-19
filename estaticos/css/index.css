@@ -24,6 +24,20 @@ h2{
 form{
     display: flex;
     flex-direction: column;
+
+    margin-left: 200px;
+    align-self: center;
+    width: 100%;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    grid-area: formulario;
+    align-self: center;
+    min-height: auto;
+    padding: 20px;
+
+
 }
 
 /* grid */
@@ -31,28 +45,12 @@ form{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    min-height: 100vh;
+    min-height: 50vh;
 
     grid-template-areas: 
         'formulario banner'
         'formulario banner';
-}
-
-.formulario{
-    display: flex;
-    flex-direction: column;
-    grid-area: formulario;
-    align-self: center;
-    min-height: 55vh;
-    /* max-width: 50vh; */
-    padding: 20px;
-}
-
-form{
-    margin-left: 20px;
-    /* border: solid 1px; */
-    align-self: center;
-    width: 50vh;
+    
 }
 
 label{
@@ -75,6 +73,7 @@ input::placeholder{
     
 }
 
+/* Botão */
 button{
     border: none;
     background-color: #3D52D5;
@@ -98,8 +97,13 @@ button:active{
 
 }
 
+/* Fim botão */
 
 .banner{
     grid-area: banner;
     align-self: center;
+}
+
+.banner img{
+    width: 90vh;
 }
