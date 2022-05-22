@@ -2,26 +2,44 @@ html{
     background-color: #3D52D5;
 }
 
-
+/* Nav */
 nav{
     grid-area: menu;
 }
 
+/* Container */
 .container{
     grid-area: container;
+    background-color: white;
+    border-radius: 10px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
 }
 
+.dash, .informacao{
+    border: solid 1px;
+
+    width: 50%;
+    height: auto;
+    padding: 20px;
+}
+
+/* Roda pé */
 footer{
     grid-area: roda_pe;
 }
 
 #grid{
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 100px 1fr;
     grid-template-rows: 300px 1fr;
 
     grid-template-areas: 
         'menu container'
         'menu roda_pe'
     ;
+
+    padding: 10px;
 }
