@@ -2,7 +2,7 @@ html{
     background-color: #3D52D5;
 }
 
-/* Nav */
+/* ********** Nav ********** */
 nav{
     grid-area: menu;
 }
@@ -12,13 +12,16 @@ nav{
     flex-direction: column;
     padding: 5px;
     margin-top: 20px;
+    margin-right: 5px;
+
     /* border: solid 1px; */
 
 }
 
 .logo > span{
-    font-size: .8em;
+    font-size: .6em;
     text-align: center;
+    align-self: center;
     color: white;
     font-weight: 800;
     padding: 10px;
@@ -26,12 +29,29 @@ nav{
 }
 
 .logo > img{
-    width: 110px;
+    width: 80px;
     border-radius: 50%;
     align-self: center;
 }
 
-/* Fim nav */
+ul{
+    display: flex;
+    flex-direction: column;
+    /* border: solid yellow 1px; */
+    align-items: center;
+    list-style: none;
+}
+
+ul li{
+    margin-top: 40px;
+    margin-right: 5px;
+}
+
+.menu ul li a img{
+    width: 30px;
+}
+/* ********** Fim nav ********** */
+
 
 /* Container */
 .container{
@@ -59,7 +79,7 @@ footer{
 
 #grid{
     display: grid;
-    grid-template-columns: 170px 1fr;
+    grid-template-columns: 100px 1fr;
     grid-template-rows: 300px 1fr;
 
     grid-template-areas: 
