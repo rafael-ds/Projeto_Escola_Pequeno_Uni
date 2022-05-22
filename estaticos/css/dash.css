@@ -7,13 +7,39 @@ nav{
     grid-area: menu;
 }
 
+.logo{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-top: 20px;
+    /* border: solid 1px; */
+
+}
+
+.logo > span{
+    font-size: .8em;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    padding: 10px;
+    /* border: solid 1px; */
+}
+
+.logo > img{
+    width: 110px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+/* Fim nav */
+
 /* Container */
 .container{
     grid-area: container;
     background-color: white;
     border-radius: 10px;
 }
-.flex{
+.flex-container{
     display: flex;
     justify-content: space-between;
 }
@@ -33,7 +59,7 @@ footer{
 
 #grid{
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 170px 1fr;
     grid-template-rows: 300px 1fr;
 
     grid-template-areas: 
