@@ -12,6 +12,7 @@ h1, h2{
 h1{
     padding: 5px;
     font-weight: 700;
+    font-size: 2em;
 
 }
 
@@ -25,20 +26,25 @@ form{
     display: flex;
     flex-direction: column;
 
-    margin-left: 200px;
+    margin-left: 50px;
     align-self: center;
     width: 100%;
+
+    /* border: solid 1px; */
 }
+
 .formulario{
     display: flex;
     flex-direction: column;
     grid-area: formulario;
     align-self: center;
     min-height: auto;
-    padding: 20px;
-
+    padding: 5px;
+    margin-top: 50px;
+    /* border: solid 1px yellow; */
 
 }
+
 
 /* grid */
 .grid{
@@ -50,6 +56,8 @@ form{
     grid-template-areas: 
         'formulario banner'
         'formulario banner';
+
+    
     
 }
 
@@ -102,8 +110,90 @@ button:active{
 .banner{
     grid-area: banner;
     align-self: center;
+
+    /* border: solid 1px rgb(62, 40, 141); */
+
 }
 
 .banner img{
-    width: 90vh;
+    width: 80vh;
 }
+
+
+
+
+
+
+
+/* ========== MediaQueries =========== */
+@media screen and (max-width: 700px){
+    
+    .banner img{
+        width: 45vh;
+        /* border: solid 1px; */
+    }
+
+
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+        grid-template-areas: 
+            'banner banner' 
+            'fomulario formulario'
+        ;
+
+        /* border: solid 1px gold; */
+
+    }
+
+    .formulario{
+        padding: 0px;
+        margin-top: 50px;
+        margin-right: 100px;
+        width: 90%;
+        /* border: solid 1px; */
+    }
+
+    h1{
+        font-size: 1.8em;
+    }
+
+    h2{
+        font-size: 1em;
+    }
+
+
+    form{   
+        margin-left: 0px;
+        align-self: center;
+    }
+
+
+    input{
+        padding: 0px;
+        margin-bottom: 20px;
+    
+    }
+
+    button{
+        margin-right: 20px;
+        align-self: center;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+    .formulario{
+        margin-top: 0px;
+        margin-right: 100px;
+        width: 90%;
+        padding: 0px;
+        /* border: solid 1px; */
+    }
+
+    .banner img{
+        width: 100%;
+    }
+ }
