@@ -1,0 +1,27 @@
+html{
+    background-color: #3D52D5;
+}
+
+
+nav{
+    grid-area: menu;
+}
+
+.container{
+    grid-area: container;
+}
+
+footer{
+    grid-area: roda_pe;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 300px 1fr;
+
+    grid-template-areas: 
+        'menu container'
+        'menu roda_pe'
+    ;
+}
