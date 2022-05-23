@@ -8,3 +8,9 @@
 
     font-family: 'Nunito Sans', sans-serif;
 }
+
+h1{
+    color: #3D52D5;
+    padding: 10px;
+    font-weight: 900;
+}

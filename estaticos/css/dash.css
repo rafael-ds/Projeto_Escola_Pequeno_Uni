@@ -53,11 +53,13 @@ ul li{
 /* ********** Fim nav ********** */
 
 
-/* Container */
+/* ********** Container ********** */
 .container{
     grid-area: container;
     background-color: white;
     border-radius: 10px;
+    border: solid 1px;
+    height: 100vh;
 }
 .flex-container{
     display: flex;
@@ -65,14 +67,96 @@ ul li{
 }
 
 .dash, .informacao{
-    border: solid 1px;
+    /* border: solid 1px; */
 
     width: 50%;
     height: auto;
     padding: 20px;
 }
 
-/* Roda pé */
+.dash > div{
+    display: flex;
+    flex-direction: row;
+}
+
+.card_series{
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    border-radius: 10px;
+
+}
+
+.serie2{
+    background-color: #DDF5FF;
+}
+
+.serie3{
+    background-color: #E5E5E5;
+}
+
+.serie4{
+    background-color: brown;
+}
+
+.serie5{
+    background-color: #FF7700;
+}
+
+
+.card_series:hover{
+    box-shadow: #7e7d7d7e 15px 10px 10px 2px;
+    transform: translateY(5px);
+    transition-duration: .5s;
+    z-index: 1;
+    /* transform: translateX(5px); */
+}
+
+.card_series > div{
+    align-self: center;
+}
+
+.card_series > img{
+    width: 25%;
+    padding: 10px;
+    align-self: center;
+    /* border: solid 1px; */
+
+}
+
+.card_series, h2, p{
+    padding: 5px;
+    align-self: center;
+}
+
+
+.card_series p{
+    font-size: .6em;
+    color: #808080;
+}
+
+.card_series a{
+    /* border: solid 1px; */
+    float: right;
+    padding: 5px;
+}
+
+.material-symbols-outlined {
+    color: #3D52D5;
+    align-self: flex-end;
+
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 600,
+    'GRAD' 0,
+    'opsz' 48,
+
+}
+
+/* ********** Container ********** */
+
+
+/* ********** Roda pé ********** */
 footer{
     grid-area: roda_pe;
 }
