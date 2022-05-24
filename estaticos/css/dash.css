@@ -56,8 +56,7 @@ ul li{
 /* ********** Container ********** */
 .flex-container{
     display: flex;    
-    justify-content: space-between;
-    /* border: solid 1px red; */
+    justify-content: space-between;   /* border: solid 1px red; */
 
 }
 
@@ -118,7 +117,7 @@ ul li{
 }
 
 .card_series > img{
-    width: 25%;
+    width: 18%;
     padding: 10px;
     align-self: center;
     /* border: solid 1px; */
@@ -133,13 +132,13 @@ ul li{
 
 .card_series p{
     font-size: .6em;
-    color: #808080;
+    width: 85%;
 }
 
 .card_series a{
     /* border: solid 1px; */
     float: right;
-    padding: 5px;
+    margin-top: -20px;
 }
 
 .material-symbols-outlined {
@@ -165,7 +164,7 @@ footer{
 #grid{
     display: grid;
     grid-template-columns: 100px 1fr;
-    grid-template-rows: 300px 1fr;
+    grid-template-rows: 1fr 30px;
 
     grid-template-areas: 
         'menu container'
