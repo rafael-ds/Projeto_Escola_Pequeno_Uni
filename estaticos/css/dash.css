@@ -63,6 +63,7 @@ ul li{
 }
 .flex-container{
     display: flex;
+    
     justify-content: space-between;
 }
 
