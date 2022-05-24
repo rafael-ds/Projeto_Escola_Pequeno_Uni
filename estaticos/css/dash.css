@@ -54,25 +54,25 @@ ul li{
 
 
 /* ********** Container ********** */
-.container{
-    grid-area: container;
-    background-color: white;
-    border-radius: 10px;
-    border: solid 1px;
-    height: 100vh;
-}
 .flex-container{
-    display: flex;
-    
+    display: flex;    
     justify-content: space-between;
+    /* border: solid 1px red; */
+
 }
 
 .dash, .informacao{
-    /* border: solid 1px; */
+    /* border: solid 1px yellow; */
 
     width: 50%;
     height: auto;
     padding: 20px;
+}
+
+.dash{
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .dash > div{
