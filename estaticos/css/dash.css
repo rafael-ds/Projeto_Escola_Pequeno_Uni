@@ -134,18 +134,23 @@ ul li{
 }
 
 
-
 .serie3{
     background-color: #E5E5E5;
 }
 
+.serie2 p, .serie3 p{
+    color: gray;
+}
+
 .serie4{
     background-color: #FF8484;
-    color: white;
 }
 
 .serie5{
     background-color: #FF7700;
+}
+
+.serie4 p, .serie5 p{
     color: white;
 }
 
@@ -249,3 +254,56 @@ footer p a{
 
     padding: 10px;
 }
+
+
+
+
+
+/* ========== MediaQueries =========== */
+@media screen and (max-width: 700px){
+    #grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 50px;
+    
+        grid-template-areas: 
+            'menu '
+            'container '
+            'roda_pe '
+        ;
+    
+    }
+
+    .flex-nav-desk{
+        display: none;
+    }
+    
+    .flex-container{
+        flex-direction: column;
+        justify-content: center;
+        /* overflow: scroll; */
+    }
+    
+    .dash, .informacao{
+        width: 100%;
+    }
+
+    .usuario{
+        display: none;
+    }
+
+
+    footer{
+        background-color: #f70;
+    }
+
+    
+    
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+
+ }
