@@ -153,6 +153,10 @@ ul li{
     color: white;
 }
 
+.serie4 h2, .serie5 h2{
+    color: white;
+}
+
 .material-symbols-outlined {
     color: #3D52D5;
     align-self: flex-end;
@@ -178,11 +182,11 @@ ul li{
     border-bottom-right-radius: 10px;
 }
 
-.usuario{
+.usuario-desk{
     display: flex;
 }
 
-.usuario > img{
+.usuario-desk > img{
     width: 60px;
     border-radius: 50%;
     margin-right: 100px;
@@ -191,7 +195,7 @@ ul li{
     position: relative;
 }
 
-.usuario > p{
+.usuario-desk > p{
     background-color: rgb(231, 217, 217);
     align-self: center;
     text-align: center;
@@ -278,13 +282,39 @@ footer p a{
     }
 
     .flex-container{
-        border: solid yellow 2px;
         flex-direction: column;
         height: auto;
     }
 
     .dash, .informacao{
         width: 100%;
+    }
+
+    .dash{
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .informacao{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .usuario-desk{
+        display: none;
+    }
+
+    .calendario{
+        margin-top: 20px;
+    }
+
+    .card_series p{
+        font-size: .7em;
+    }
+
+    footer p{
+        margin-top: 10px;
+        color: white;
     }
 
 
