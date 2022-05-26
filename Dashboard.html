@@ -4,18 +4,19 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        
         <link rel="stylesheet" href="./estaticos/css/dash.css">
         <link rel="stylesheet" href="./estaticos/css/base.css">
-
+         
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <title>Dashboard</title>
+        
     </head>
     <body>
         
         <section id="grid">
             <!-- Nav -->
             <nav>
+                <!-- Menu Desktop -->
                 <div class="flex-nav-desk">
                     <!-- Logo -->
                     <div class="logo">
@@ -51,13 +52,43 @@
                     </div>
                 </div>
 
+                <!-- Menu Mobile -->
                 <div class="flex-nav-mob">
-                    
+
+                    <div id="toggle" toggle>
+                        <img src="./estaticos/img/toggle.png" alt="">
+                    </div>
+
+                    <div class="menu dropdown">
+                        <div class="drop">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./estaticos/img/class.png" alt="menu-aluno">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./estaticos/img/aluno.png" alt="menu-aluno">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./estaticos/img/professor.png" alt="menu-aluno">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./estaticos/img/exit.png" alt="menu-aluno">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </nav>
 
-            <!-- Container -->
-            
+            <!-- Container -->            
             <div class="flex-container">
 
                 <!-- Dash -->
@@ -181,5 +212,9 @@
             </footer>
         </section>
 
+
+
+        <!-- Scripts -->
+        <script src="./estaticos/js/toggle.js"></script>
     </body>
 </html>

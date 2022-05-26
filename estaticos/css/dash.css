@@ -41,6 +41,10 @@ nav{
     align-self: center;
 }
 
+.flex-nav-mob{
+    display: none;
+}
+
 ul{
     display: flex;
     flex-direction: column;
@@ -247,7 +251,7 @@ footer p a{
 
 #grid{
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 130px 1fr;
     grid-template-rows: 1fr 30px;
 
     grid-template-areas: 
@@ -263,11 +267,12 @@ footer p a{
 
 
 /* ========== MediaQueries =========== */
-@media screen and (max-width: 700px){
+@media screen and (max-width: 700px){    
+    
     #grid{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 1fr 50px;
+        grid-template-rows: 137px 1fr 50px;
     
         grid-template-areas: 
             'menu '
@@ -279,6 +284,39 @@ footer p a{
 
     .flex-nav-desk{
         display: none;
+    }
+    
+    .flex-nav-mob{
+        display: flex
+    }
+
+    #toggle img{
+        width: 50px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    /* .dropdown{
+        position: relative;
+    } */
+
+    .drop{
+        /* margin-top: 100px; */
+        display: none;
+        /* position: absolute;
+        z-index: 1; */
+    }
+
+
+    ul{
+        margin-top: 65px;
+        flex-direction: row;
+        margin-left: -50px;
+    }
+
+    ul li{
+        margin-top: 0px;
+        padding: 20px;
     }
 
     .flex-container{
