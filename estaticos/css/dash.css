@@ -63,7 +63,6 @@ ul li{
 
 .flex-container{
     display: flex;    
-    justify-content: space-between; 
     height: 100vh;
   
     /* border: solid 1px red; */
@@ -277,25 +276,18 @@ footer p a{
     .flex-nav-desk{
         display: none;
     }
-    
+
     .flex-container{
+        border: solid yellow 2px;
         flex-direction: column;
-        justify-content: center;
-        /* overflow: scroll; */
+        height: auto;
     }
-    
+
     .dash, .informacao{
         width: 100%;
     }
 
-    .usuario{
-        display: none;
-    }
 
-
-    footer{
-        background-color: #f70;
-    }
 
     
     
