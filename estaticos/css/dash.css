@@ -9,6 +9,12 @@ h2{
     margin-top: 5px;
 }
 
+#flex{
+    /* border: solid 1px; */
+    display: flex;
+    padding: 20px;
+}
+
 /* ********** Nav ********** */
 nav{
     grid-area: menu;
@@ -249,37 +255,11 @@ footer p a{
     font-weight: 700;
 }
 
-#grid{
-    display: grid;
-    grid-template-columns: 130px 1fr;
-    grid-template-rows: 1fr 30px;
-
-    grid-template-areas: 
-        'menu container'
-        'menu roda_pe'
-    ;
-
-    padding: 10px;
-}
-
-
-
-
-
 /* ========== MediaQueries =========== */
 @media screen and (max-width: 700px){    
-    
-    #grid{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 137px 1fr 50px;
-    
-        grid-template-areas: 
-            'menu '
-            'container '
-            'roda_pe '
-        ;
-    
+
+    #flex{
+        flex-direction: column;
     }
 
     .flex-nav-desk{
@@ -296,22 +276,16 @@ footer p a{
         margin-left: 20px;
     }
 
-    /* .dropdown{
-        position: relative;
-    } */
-
     .drop{
-        /* margin-top: 100px; */
         display: none;
-        /* position: absolute;
-        z-index: 1; */
+
     }
 
 
     ul{
-        margin-top: 65px;
+        margin-top: 70px;
         flex-direction: row;
-        margin-left: -50px;
+        margin-left: -55px;
     }
 
     ul li{
@@ -322,6 +296,7 @@ footer p a{
     .flex-container{
         flex-direction: column;
         height: auto;
+        margin-top: 30px;
     }
 
     .dash, .informacao{
