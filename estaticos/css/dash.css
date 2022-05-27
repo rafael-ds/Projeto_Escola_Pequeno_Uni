@@ -10,16 +10,11 @@ h2{
 }
 
 #flex{
-    /* border: solid 1px; */
     display: flex;
     padding: 20px;
 }
 
 /* ********** Nav ********** */
-nav{
-    grid-area: menu;
-}
-
 .logo{
     display: flex;
     flex-direction: column;
@@ -47,10 +42,6 @@ nav{
     align-self: center;
 }
 
-.flex-nav-mob{
-    display: none;
-}
-
 ul{
     display: flex;
     flex-direction: column;
@@ -65,6 +56,11 @@ ul li{
 
 .menu ul li a img{
     width: 40px;
+}
+
+
+.flex-nav-mob{
+    display: none;
 }
 /* ********** Fim nav ********** */
 
@@ -242,8 +238,6 @@ ul li{
 
 /* ********** Roda pé ********** */
 footer{
-    grid-area: roda_pe;
-
     text-align: center;
     color: white;
     padding: 10px;
@@ -269,8 +263,7 @@ footer p a{
     .flex-nav-mob{
         display: flex
     }
-
-    #toggle img{
+    .toggle img{
         width: 50px;
         margin-top: 20px;
         margin-left: 20px;
@@ -330,15 +323,84 @@ footer p a{
         color: white;
     }
 
+    .usuario-mob{
+        display: flex;
+        border: solid 1px;
+    }
 
-
-    
-    
+    .usuario-mob > img{
+        width: 60px;
+    }
     
 }
 
 
-@media (min-width: 768px) and (max-width: 991.98px) { 
 
+@media (min-width: 576px) and (max-width: 915.98px) { 
+    
+    .flex-nav-desk{
+        display: none;
+    }
+    
+    .flex-nav-mob{
+        display: flex;
+    }
+    
+    #flex{
+        flex-direction: column;
+    }
 
+    .toggle img{
+        width: 50px;
+    }
+
+    .logo > span{
+        font-size: .8em;
+    }
+
+    .drop{
+        display: none;
+    }
+
+    ul{
+        flex-direction: row;
+        margin-left: 0;
+        /* border: solid 1px; */
+        height: 50px;
+    }
+
+    ul li{
+        flex-direction: row;
+        padding: 20px;
+        margin-top: -2px;
+    }
+
+    .menu ul li a img{
+        width: 30px;
+    }
+
+    .flex-container{
+        margin-top: 30px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .dash, .informacao{
+        width: 100%;
+    }
+
+    .card_series > img{
+        padding: 5px;
+    }
+
+    h2{
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .usuario-desk{
+        display: none;
+    }
+
+    
  }
