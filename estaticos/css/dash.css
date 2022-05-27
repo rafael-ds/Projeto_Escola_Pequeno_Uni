@@ -192,6 +192,10 @@ ul li{
     display: flex;
 }
 
+.usuario-mob{
+    display: none;
+}
+
 .usuario-desk > img{
     width: 60px;
     border-radius: 50%;
@@ -262,7 +266,6 @@ footer p a{
     
     .flex-nav-mob{
         display: flex;
-        /* border: solid 1px; */
         margin-top: -80px !important;
 
     }
@@ -439,5 +442,42 @@ footer p a{
         display: none;
     }
 
+    .flex-nav-mob{
+        display: flex;
+        margin-top: -52px !important;
+
+    }
+
+
+    .usuario-mob{
+        display: flex;  
+        align-items: center;
+        justify-content: end;        
+        
+    }
+
+    .usuario-mob > img{
+        width: 60px;
+        margin-right: 130px;
+        border-radius: 50%;
+
+        z-index: 2;
+        position: relative;
+    }
+
+    .usuario-mob > p{
+        background-color: rgb(231, 217, 217);
+     
+        width: 150px;
+        height: auto;
+        position: absolute;
+        padding: 5px;
+        z-index:1;
+        margin-left: 50px;
+        text-align: center;
+
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
     
  }
