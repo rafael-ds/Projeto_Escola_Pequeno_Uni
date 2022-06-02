@@ -7,7 +7,6 @@
         <title>Turmas</title>
         
         <link rel="stylesheet" href="./estaticos/css/base.css">
-        <!-- <link rel="stylesheet" href="./estaticos/css/dash.css"> -->
         <link rel="stylesheet" href="./estaticos/css/turma.css">
          
         <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
@@ -15,48 +14,96 @@
     </head>
     <body>
         
-        <section class="container">
-            <!-- Nav -->
+        <section class="flex-container">
+            <!-- Nav Desk-->
            <nav class="nav">
-
                <!-- Nav Desk -->
-               <div class="flex-nav-desk">
-                    <!-- Logo -->
-                    <div class="logo">
-                        <span style="order: 1;">Escola Pequeno</span>
-                        <span style="order: 3;">Uni</span>
-                        <img style="order: 2;" src="./estaticos/img/logo-1.jpg" alt="imagem_logo_inicornio">
-                    </div>
+               <div class="nav-desk">
+                    <div class="logo-desk">
+                        <!-- Logo -->
+                        <div class="logo">
+                            <span>Escola Pequeno</span>
+                            <img src="./estaticos/img/logo-1.jpg" alt="imagem_logo_inicornio">    
+                            <span >Uni</span>
+                        </div>
 
-                    <!-- Menu -->
-                    <div class="menu">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <img src="./estaticos/img/class.png" alt="menu-aluno">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./estaticos/img/aluno.png" alt="menu-aluno">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./estaticos/img/professor.png" alt="menu-aluno">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./estaticos/img/exit.png" alt="menu-aluno">
-                                </a>
-                            </li>
-                        </ul>
+                        <!-- Menu -->
+                        <div class="menu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./estaticos/img/class.png" alt="menu-aluno">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./estaticos/img/aluno.png" alt="menu-aluno">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./estaticos/img/professor.png" alt="menu-aluno">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./estaticos/img/exit.png" alt="menu-aluno">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
+               </div>
            </nav>
 
-           <div class="dash">Dash</div>
+           <!-- Nav Mobile -->
+           <div class="nav-mobile">
+                <div class="usuario-mob">
+                    <img src="./estaticos/img/logo-1.jpg" alt="">
+                    <p>Usuário</p>
+                </div>
+                
+               <div class="menu-drop">
+                   <div class="toggle">
+                        <img src="./estaticos/img/toggle.png" alt="btn menu-mobile">
+                   </div>
+
+                   <div class="dropdown">
+                        <div class="drop">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./estaticos/img/class.png" alt="menu-aluno">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./estaticos/img/aluno.png" alt="menu-aluno">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./estaticos/img/professor.png" alt="menu-aluno">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./estaticos/img/exit.png" alt="menu-aluno">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                   </div>
+               </div>
+
+           </div>
+
+
+           <!-- Dash -->
+           <div class="dash">
+               <div class="item">Espaco de mostra</div>
+               <div class="item">Calendario</div>
+           </div>
         </section>
 
         <!-- Roda pé -->
