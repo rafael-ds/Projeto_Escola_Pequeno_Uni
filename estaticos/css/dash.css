@@ -130,4 +130,8 @@ h2{
 
 }
 
-@media(min-width: 1030px) {}
+@media(min-width: 1030px) {
+    .card_series{
+        height: 140px;
+    }
+}

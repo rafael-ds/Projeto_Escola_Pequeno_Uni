@@ -1,0 +1,107 @@
+.serie{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    border-bottom: 4px solid #3d51d569;
+    width: 200px;
+    
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.serie img{
+    width: 50px;
+}
+
+.serie span{
+    font-size: 30px;
+    margin-left: 20px;
+    line-height: 10px;
+    color: #4D4D4D;
+}
+
+.classe-descricao{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    color: #4D4D4D;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.lista-alunos h2{
+    font-size: 1em;
+    color: #3D52D5;
+    padding: 15px;
+}
+
+.tabela{
+    box-shadow: 0px 2px 5px 0 rgba(128, 128, 128, 0.349);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+
+    background-color: #70D6FF;
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 10px; */
+}
+
+.tabela thead tr{
+    display: flex;
+}
+
+.tabela thead tr th{
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+}
+
+tbody{
+    height: auto;
+}
+
+.tabela tbody tr{
+    background-color: white;
+    display: flex;
+
+}
+
+.tabela tbody tr td{
+    /* border: solid 1px; */
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+
+}
+
+
+/* Media Queries */
+
+@media(min-width: 782px) and (max-width: 1024px){
+
+    .serie{
+        margin-top: 0;
+    }
+
+    .serie img{
+        width: 40px;
+    }
+
+    .serie span{
+        font-size: 1.5em;
+    }
+
+    .classe-descricao{
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    .tabela thead tr th, .tabela tbody tr td{
+        font-size: .6em;
+    }
+}
