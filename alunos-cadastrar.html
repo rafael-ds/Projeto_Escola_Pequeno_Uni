@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./estaticos/css/base.css">
+        <link rel="stylesheet" href="./estaticos/css/alunos.css">
+
+        <title>Alunos - Cadastro</title>
+    </head>
+
+    <body>
+        <section class="flex-container">
+            <!-- Nav Desk-->
+           <nav class="nav">
+                <!-- Nav Desk -->
+                <div class="nav-desk">
+                    <div class="logo-desk">
+                        <!-- Logo -->
+                        <div class="logo">
+                            <span>Escola Pequeno</span>
+                            <img src="./estaticos/img/logo-1.jpg" alt="imagem_logo_inicornio">    
+                            <span >Uni</span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="menu">
+                            <ul>
+                                <li>
+                                    <a href="./dashboard.html">
+                                        <img src="./estaticos/img/class.png" alt="Area de classe (Dashboard)">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./alunos-cadastrar.html">
+                                        <img src="./estaticos/img/aluno.png" alt="Area aluno">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./professor-cadastrar">
+                                        <img src="./estaticos/img/professor.png" alt="Area professores">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./estaticos/img/exit.png" alt="Sair">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Nav Mobile -->
+            <div class="nav-mobile">
+                    <div class="usuario-mob">
+                        <img src="./estaticos/img/logo-1.jpg" alt="">
+                        <p>Usuário</p>
+                    </div>
+                
+                    <div class="menu-drop">
+                        <div class="toggle" toggle>
+                                <img src="./estaticos/img/toggle.png" alt="btn menu-mobile">
+                        </div>
+
+                        <div class="dropdown">
+                                <div class="drop">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./estaticos/img/class.png" alt="Area de classe (Dashboard)">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./estaticos/img/aluno.png" alt="Area aluno">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./estaticos/img/professor.png" alt="Area professores">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./estaticos/img/exit.png" alt="menu-aluno">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- Dash -->
+            <div class="dash">
+
+                <div class="item">
+                    <h1>Alunos</h1>
+
+                    <!-- Sub-Menu -->
+                    <div class="sub-menu-aluno">
+                        <ul>
+                            <li>
+                                <a href="./cadstrar-aluno.html">Cadastrar</a>
+                            </li>
+                            <li>
+                                <a href="./editar-aluno.html">Editar</a>
+                            </li>
+                            <li>
+                                <a href="./excluir-aluno.html">Excluir</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Formulários -->
+                    <form action="" method="post" id="form">
+                        
+                        <!-- Seção 1 -->
+                        <section class="secao-1">
+ 
+                            <div class="area">
+                                <!-- Nome -->
+                                <div>
+                                    <label for="Nome">Nome</label>
+                                    <input type="text" name="nome">
+                                </div>
+                                <!-- Data Nasc -->
+                                <div>
+                                    <label for="nascimento">Nascimento</label>
+                                    <input type="text" name="data-nasc">
+                                </div>
+                                
+                            </div>
+                            
+                            
+                            <div class="area">
+                                <!-- Nome mae -->
+                                <div>
+                                    <label for="Mae">Mãe</label>
+                                    <input type="text" name="nome-mae">
+                                </div>
+    
+                                <!-- Nome Pai -->
+                                <div>
+                                    <label for="Pai">Pai</label>
+                                    <input type="text" name="nome-pai">
+                                </div>
+                            </div>
+        
+                            <div class="check">
+                                <div class="radio">
+                                    <span>Sexo: </span>
+                                    <label for="Masculino">M</label>
+                                    <input type="checkbox">
+                                    
+                                    <label for="Feminino">F</label>
+                                    <input type="checkbox">                            
+                                </div>
+            
+                                <div class="radio">
+                                    <span>PcN: </span>
+                                    <label for="Sim">S</label>
+                                    <input type="checkbox">
+                                    <label for="Nao">N</label>
+                                    <input type="checkbox">                            
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Seção 2 -->
+                        <section class="secao-2">
+ 
+                            <div class="area">
+                                <!-- Rua -->
+                                <div>
+                                    <label for="Rua">Rua</label>
+                                    <input type="text" name="rua">
+                                </div>
+
+                                <!-- Bairro -->
+                                <div>
+                                    <label for="Bairro">Bairro</label>
+                                    <input type="text" name="bairro">
+                                </div>
+
+                                <!-- Numero -->
+                                <div>
+                                    <label for="Numero">Numero</label>
+                                    <input type="text" name="numero">
+                                </div>
+                                
+                            </div>                            
+                            
+                            <div class="area">
+                                <!-- Municipio -->
+                                <div>
+                                    <label for="Municipio">Municipio</label>
+                                    <input type="text" name="municipio">
+                                </div>
+    
+                                <!-- Cep -->
+                                <div>
+                                    <label for="CEP">CEP</label>
+                                    <input type="text" name="cep">
+                                </div>
+
+                                <!-- UF -->
+                                <div>
+                                    <label for="UF">UF</label>
+                                    <input type="text" name="uf">
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Seção 3 -->
+                        <section class="secao-3">
+ 
+                            <div class="area">
+                                <!-- Telefone -->
+                                <div>
+                                    <label for="Telefone">Telefone</label>
+                                    <input type="tel" name="tel">
+                                </div>
+
+                                <!-- Celular -->
+                                <div>
+                                    <label for="Celular">Celular</label>
+                                    <input type="tel" name="cel">
+                                </div>
+                                
+                            </div>                            
+                            
+                            <div class="area">
+                                <!-- Emai -->
+                                <div>
+                                    <label for="Email">Email</label>
+                                    <input type="email" name="email">
+                                </div>
+    
+                                <!-- Social -->
+                                <div>
+                                    <label for="Social">Rede Social</label>
+                                    <input type="url" name="r-social">
+                                </div>
+                            </div>
+                        </section>
+
+                        <button type="submit">Cadastrar</button>
+
+                    </form>
+                </div>
+
+                <!-- Notificações -->
+                <div class="item">
+                    <div class="informacao">
+
+                        <!-- Usuário -->
+                        <div class="usuario-desk">
+                            <img src="./estaticos/img/logo-1.jpg" alt="">
+                            <p>Usuário</p>
+                        </div>
+                
+                        <!-- Calendario -->
+                        <div class="calendario">
+                            Calendario
+                        </div>
+                        
+                        <!-- Ações -->
+                        <div class="acoes">açoes</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Roda pé -->
+        <footer>
+            <p>Desenvolvido por <a href="https://github.com/rafael-ds" target="_blank">Rafael Silva</a></p>
+        </footer>
+
+        <script src="./estaticos/js/toggle.js"></script>
+    </body>
+</html>

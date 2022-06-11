@@ -1,0 +1,109 @@
+.sub-menu-aluno{
+    margin-top: 15px;
+}
+
+.sub-menu-aluno ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 80%;
+
+}
+
+.sub-menu-aluno ul li {
+    padding: 5px;
+    font-weight: 700;
+}
+
+.sub-menu-aluno ul li:nth-child(1){
+    border-bottom: 2px #3D52D5 solid;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /* border: 1px solid; */
+}
+
+.area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+.area > div label{
+    font-size: 1em;
+    padding: 0 0 5px 10px;
+}
+
+.area > div input{
+    margin-left: 5px;
+    width: 95%;
+    border: none;
+    border-radius: 5px;
+    min-height: 20px;
+    background-color: rgba(206, 206, 206, 0.548);
+}
+
+.check{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.radio{
+    flex: 1;
+}
+
+.radio label{
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+.secao-1, .secao-2{
+    border-bottom: solid 1px gainsboro;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+.secao-2 .area > div:nth-child(1){
+    flex: 6;
+}
+
+.secao-2 .area > div:nth-child(2){
+    flex: 6;
+}
+
+.secao-2 .area > div:nth-child(3){
+    flex: 3;
+}
+.secao-3{
+    margin-top: 20px;
+}
+
+#form button{
+    align-self: flex-end;
+    margin: 10px 20px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
