@@ -99,6 +99,52 @@
 
 
 
+/* ----- Medias Queries ----- */
+@media(max-width: 780px){
+    
+
+    .sub-menu-aluno ul{
+        width: 100%;
+        justify-content: space-between;
+
+    }
+
+}
+
+@media(min-width: 782px) and (max-width: 1024px){
+    .dash{
+        height: auto;
+    }
+    .sub-menu-aluno ul{
+        font-size: .8em;
+    }
+
+    .sub-menu-aluno ul li{
+        padding: 0;
+    }
+
+    #form{
+        font-size: .8em;
+        padding: 2px;
+    }
+
+    .area > div{
+        margin-bottom: 10px;
+    }
+
+    .area > div input{
+        min-height: 3px;
+    }
+
+    .secao-1, .secao-2{
+        padding-bottom: 0;
+        margin-top: 5px;
+    }
+    
+}
+
+
+
 
 
 

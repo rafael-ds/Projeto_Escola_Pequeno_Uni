@@ -367,4 +367,8 @@ footer p a{
     .nav-mobile{
         display: none;
     }
+
+    .dash{
+        height: auto;
+    }
 }
