@@ -15,10 +15,6 @@
     font-weight: 700;
 }
 
-.sub-menu-aluno ul li:nth-child(1){
-    border-bottom: 2px #3D52D5 solid;
-}
-
 #form{
     display: flex;
     flex-direction: column;
